@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)으뜸정보기술 - NVIDIA Omniverse 교육 제안</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Noto Sans KR"', 'sans-serif'] },
+                    colors: { nvgreen: '#76B900', nvdark: '#1A1C1E' }
+                }
+            }
+        }
+    </script>
+    <style>body { font-family: 'Noto Sans KR', sans-serif; background-color: #f8fafc; }</style>
+</head>
+<body class="text-gray-800 antialiased selection:bg-nvgreen selection:text-white min-h-screen flex flex-col items-center justify-center p-4">
+
+    <!-- Main Container -->
+    <div class="max-w-5xl w-full">
+        
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="inline-flex items-center justify-center space-x-2 text-sm font-bold text-gray-500 bg-white px-5 py-2 rounded-full border border-gray-200 shadow-sm mb-6">
+                <i class="fa-solid fa-building text-nvgreen"></i>
+                <span>(주)으뜸정보기술 제안서 포털</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black mb-4 leading-tight text-nvdark">
+                <span class="text-nvgreen">NVIDIA Omniverse</span> 기반<br>대학교육 지원 제안
+            </h1>
+            <p class="text-gray-500 text-lg">광주·전남 최고 IT 파트너가 제안하는 대학 인재 양성 솔루션</p>
+        </header>
+
+        <!-- Navigation Cards (Buttons) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+            
+            <!-- Link 1: Solution Proposal -->
+            <a href="solution.html" class="group block bg-white rounded-3xl p-8 md:p-10 shadow-lg hover:shadow-2xl border-2 border-transparent hover:border-nvgreen transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mt-8 -mr-8 text-gray-100 group-hover:text-green-50 transition-colors duration-300 text-9xl z-0">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <div class="relative z-10">
+                    <div class="w-16 h-16 rounded-2xl bg-nvdark text-nvgreen flex items-center justify-center text-3xl mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <span class="text-nvgreen font-bold text-sm tracking-widest mb-2 block">PROPOSAL 01</span>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 line-clamp-2">통합 인프라 구축 및 <br>참여 제안 (All-in-One)</h2>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 h-10">
+                        클라우드 매니지먼트(MSP), AI 교육, SI 인프라를 아우르는 종합 솔루션 제안서입니다.
+                    </p>
+                    <div class="inline-flex items-center font-bold text-nvdark group-hover:text-nvgreen transition-colors">
+                        제안서 보기 <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Link 2: Curriculum Proposal -->
+            <a href="curriculum.html" class="group block bg-white rounded-3xl p-8 md:p-10 shadow-lg hover:shadow-2xl border-2 border-transparent hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mt-8 -mr-8 text-gray-100 group-hover:text-blue-50 transition-colors duration-300 text-9xl z-0">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="relative z-10">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-3xl mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <span class="text-blue-600 font-bold text-sm tracking-widest mb-2 block">PROPOSAL 02</span>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 line-clamp-2">AI 인프라 융합 교육 <br>커리큘럼 제안</h2>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 h-10">
+                        시스템을 구축하고 운영하는 실무형 '인프라/클라우드 엔지니어' 양성 교육 과정입니다.
+                    </p>
+                    <div class="inline-flex items-center font-bold text-nvdark group-hover:text-blue-600 transition-colors">
+                        제안서 보기 <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16 text-gray-400 text-sm">
+            &copy; 2026 (주)으뜸정보기술 All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>

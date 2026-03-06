@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVIDIA Omniverse & AI 인프라 융합 교육 커리큘럼 제안</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Noto Sans KR"', 'sans-serif'] },
+                    colors: { nvgreen: '#76B900', nvdark: '#1A1C1E' }
+                }
+            }
+        }
+    </script>
+    <style>body { font-family: 'Noto Sans KR', sans-serif; }</style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-nvgreen selection:text-white">
+
+    <!-- 홈으로 가기 버튼 -->
+    <a href="index.html" class="fixed top-4 left-4 md:top-6 md:left-6 z-50 bg-white/90 backdrop-blur text-gray-700 hover:text-blue-600 font-bold py-2.5 px-5 rounded-full shadow-md border border-gray-200 flex items-center gap-2 transition-all hover:scale-105">
+        <i class="fa-solid fa-arrow-left"></i> <span class="hidden md:inline">메인으로</span>
+    </a>
+
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-20">
+        
+        <!-- Header Section -->
+        <header class="bg-nvdark text-white rounded-3xl p-10 md:p-16 mb-12 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 -mt-10 -mr-10 text-gray-800 opacity-20 text-9xl">
+                <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div class="relative z-10 text-center">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-600 text-white font-bold text-sm tracking-widest mb-4 shadow-lg">
+                    CURRICULUM
+                </span>
+                <h1 class="text-3xl md:text-5xl font-black mb-6 leading-tight">
+                    <span class="text-nvgreen">NVIDIA Omniverse & AI 인프라</span><br>
+                    융합 교육 커리큘럼 제안
+                </h1>
+                <p class="text-gray-300 text-lg md:text-xl font-light">
+                    복잡한 3D 모델링을 넘어, 메타버스와 AI를 지탱하는 핵심 IT 인프라 엔지니어를 양성합니다.
+                </p>
+                <div class="mt-8 inline-flex items-center justify-center space-x-2 text-sm font-medium text-gray-400">
+                    <i class="fa-solid fa-building"></i>
+                    <span>주관: (주)으뜸정보기술 교육사업부</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Overview Section -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <i class="fa-solid fa-bullseye text-nvgreen text-2xl"></i>
+                <h2 class="text-2xl font-bold text-gray-900">교육 개요</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">교육 대상</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">컴퓨터공학, AI, 멀티미디어, 산업공학 관련 전공 학부생 및 대학원생</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-orange-50 text-orange-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">교육 형태</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">정규 특강 (총 16시간 / 4주 과정 예시) 혹은 1-Day 집중 워크샵</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 rounded-full bg-green-50 text-nvgreen flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">교육 특징</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">(주)으뜸정보기술의 다년간 축적된 클라우드 및 SI 실무 구축 노하우 전수</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-8">
+                <i class="fa-solid fa-road text-nvgreen text-2xl"></i>
+                <h2 class="text-2xl font-bold text-gray-900">주차별 커리큘럼 <span class="text-sm font-normal text-gray-500 ml-2">(4주 과정 예시)</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Week 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-gray-800">
+                    <div class="p-6 bg-gray-50 border-b border-gray-100 flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <span class="bg-gray-800 text-white text-xs font-bold px-3 py-1 rounded-full">1주차</span>
+                            <span class="text-xs font-bold text-gray-500 bg-gray-200 px-2 py-1 rounded">이론</span>
+                        </div>
+                        <i class="fa-solid fa-vr-cardboard text-gray-400 text-2xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI와 NVIDIA Omniverse의 이해</h3>
+                        <p class="text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100">메타버스, 디지털 트윈의 개념을 이해하고 Omniverse가 왜 산업 표준이 되고 있는지 파악합니다.</p>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> 메타버스와 디지털 트윈 산업 동향</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> 왜 GPU인가? (AI 연산과 3D 그래픽 렌더링)</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> NVIDIA Omniverse 아키텍처 개요</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> 3D 생태계의 HTML, <strong>USD(Universal Scene Description)</strong> 개념</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-nvgreen relative">
+                    <div class="p-6 bg-green-50/30 border-b border-gray-100 flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <span class="bg-nvgreen text-white text-xs font-bold px-3 py-1 rounded-full">2주차</span>
+                            <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded">이론 + 실습</span>
+                        </div>
+                        <i class="fa-solid fa-cloud-network text-nvgreen text-2xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">실시간 협업의 비밀: Nucleus와 클라우드</h3>
+                        <p class="text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100">여러 사용자가 동시에 3D 환경에서 작업할 수 있게 해주는 'Nucleus'와 클라우드 활용법을 배웁니다.</p>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> Omniverse Nucleus 서버의 역할과 데이터 동기화 원리</li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-blue-100 text-blue-700 text-[10px] font-bold px-1.5 py-0.5 rounded mr-1 whitespace-nowrap">실습</span>
+                                <span>로컬 및 퍼블릭 클라우드에 가상 머신(VM) 생성하기</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-blue-100 text-blue-700 text-[10px] font-bold px-1.5 py-0.5 rounded mr-1 whitespace-nowrap">실습</span>
+                                <span>클라우드 기반 가상 데스크톱(VDI) 접속 및 Launcher 설치</span>
+                            </li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> 클라우드 분산 렌더링 시스템(Farm)의 기초 이해</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Week 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-nvgreen relative">
+                    <div class="p-6 bg-green-50/30 border-b border-gray-100 flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <span class="bg-nvgreen text-white text-xs font-bold px-3 py-1 rounded-full">3주차</span>
+                            <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded">이론 + 실습</span>
+                        </div>
+                        <i class="fa-solid fa-microchip text-nvgreen text-2xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI 인프라의 기초: 서버와 컨테이너 환경 구축</h3>
+                        <p class="text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100">AI 모델 학습 및 고성능 플랫폼을 돌리기 위한 엔터프라이즈급 서버 환경 구축 방법을 배웁니다.</p>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> AI 랩(Lab)실은 어떻게 구성되는가? (GPU 서버, 스위치, 스토리지)</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> Linux 기초 및 AI 개발 환경 세팅</li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-blue-100 text-blue-700 text-[10px] font-bold px-1.5 py-0.5 rounded mr-1 whitespace-nowrap">실습</span>
+                                <span>Docker 컨테이너의 이해 및 NVIDIA Container Toolkit 설치</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-blue-100 text-blue-700 text-[10px] font-bold px-1.5 py-0.5 rounded mr-1 whitespace-nowrap">실습</span>
+                                <span>컨테이너를 활용한 기초 AI(딥러닝) 개발 환경(Jupyter) 띄워보기</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Week 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-gray-800">
+                    <div class="p-6 bg-gray-50 border-b border-gray-100 flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <span class="bg-gray-800 text-white text-xs font-bold px-3 py-1 rounded-full">4주차</span>
+                            <span class="text-xs font-bold text-gray-500 bg-gray-200 px-2 py-1 rounded">이론</span>
+                        </div>
+                        <i class="fa-solid fa-rocket text-gray-400 text-2xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">최신 AI 트렌드와 융합 플랫폼의 미래</h3>
+                        <p class="text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100">최신 생성형 AI 트렌드를 살펴보고, 향후 클라우드/인프라와 어떻게 결합하는지 학습합니다.</p>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> 생성형 AI(ChatGPT 등)와 LLM(대규모 언어 모델)의 이해</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> AI가 3D/클라우드 산업에 미치는 영향 (프롬프트 엔지니어링)</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> (주)으뜸정보기술 실무진이 들려주는 IT/클라우드 엔지니어의 비전</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> Q&A 및 커리어 멘토링</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="bg-slate-900 rounded-3xl p-8 md:p-12 shadow-xl text-white">
+            <div class="text-center mb-10">
+                <span class="text-nvgreen font-bold tracking-widest text-sm uppercase">Key Advantages</span>
+                <h2 class="text-2xl md:text-3xl font-bold mt-2">본 커리큘럼의 장점 및 대학 어필 포인트</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+                    <div class="w-10 h-10 rounded-lg bg-nvgreen text-white flex items-center justify-center font-bold text-xl mb-4">1</div>
+                    <h3 class="text-lg font-bold mb-3">차별화된 인프라 관점</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        단순한 렌더링 툴 사용법 중심의 타 교육과 달리, 거대한 시스템을 안정적으로 구축하고 운영할 수 있는 <strong>'인프라/클라우드 엔지니어' 양성</strong>에 기여합니다.
+                    </p>
+                </div>
+                <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+                    <div class="w-10 h-10 rounded-lg bg-nvgreen text-white flex items-center justify-center font-bold text-xl mb-4">2</div>
+                    <h3 class="text-lg font-bold mb-3">현장 실무형 실습</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        학생들이 학부 과정에서 직접 접하기 힘든 엔터프라이즈급 <strong>클라우드 환경 세팅 및 GPU 서버 아키텍처</strong>에 대한 생생한 실무 지식을 습득할 수 있습니다.
+                    </p>
+                </div>
+                <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+                    <div class="w-10 h-10 rounded-lg bg-nvgreen text-white flex items-center justify-center font-bold text-xl mb-4">3</div>
+                    <h3 class="text-lg font-bold mb-3">지속 가능한 IT 교육</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        응용 시뮬레이션 앱(App)은 매년 트렌드에 따라 바뀌지만, 이를 떠받치는 <strong>서버/네트워크/클라우드 기술(Infra)은 불변하는 핵심 IT 역량</strong>입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
