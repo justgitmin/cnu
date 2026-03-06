@@ -24,12 +24,24 @@
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased selection:bg-nvgreen selection:text-white">
 
-    <!-- 홈으로 가기 버튼 -->
-    <a href="index.html" class="fixed top-4 left-4 md:top-6 md:left-6 z-50 bg-white/90 backdrop-blur text-gray-700 hover:text-blue-600 font-bold py-2.5 px-5 rounded-full shadow-md border border-gray-200 flex items-center gap-2 transition-all hover:scale-105">
-        <i class="fa-solid fa-arrow-left"></i> <span class="hidden md:inline">메인으로</span>
+    <!-- 홈으로 가기 버튼 (좌측 상단) -->
+    <a href="index.html" class="fixed top-4 left-4 md:top-6 md:left-6 z-50 bg-white/90 backdrop-blur text-gray-700 hover:text-nvdark font-bold py-2.5 px-5 rounded-full shadow-md border border-gray-200 flex items-center gap-2 transition-all hover:scale-105">
+        <i class="fa-solid fa-house"></i> <span class="hidden md:inline">메인으로</span>
     </a>
 
-    <div class="max-w-6xl mx-auto px-4 py-16 md:py-20">
+    <!-- 상단 우측 퀵 네비게이션 (페이지 간 이동) -->
+    <div class="fixed top-4 right-4 md:top-6 md:right-6 z-50 flex gap-2">
+        <!-- 다른 페이지 (Inactive) -->
+        <a href="solution.html" class="bg-white/90 backdrop-blur text-gray-500 hover:text-nvgreen border border-gray-200 font-bold py-2.5 px-4 rounded-full shadow-sm text-xs md:text-sm flex items-center gap-1.5 transition-all hover:bg-green-50 hover:border-green-200">
+            <i class="fa-solid fa-handshake"></i> <span class="hidden md:inline">PROPOSAL 01</span><span class="md:hidden">P01</span>
+        </a>
+        <!-- 현재 페이지 (Active) -->
+        <a href="curriculum.html" class="bg-blue-600 text-white font-bold py-2.5 px-4 rounded-full shadow-md border border-blue-600 text-xs md:text-sm flex items-center gap-1.5 transition-all">
+            <i class="fa-solid fa-chalkboard-user"></i> <span class="hidden md:inline">PROPOSAL 02</span><span class="md:hidden">P02</span>
+        </a>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-20 mt-8 md:mt-0">
         
         <!-- Header Section -->
         <header class="bg-nvdark text-white rounded-3xl p-10 md:p-16 mb-12 shadow-2xl relative overflow-hidden">
@@ -154,7 +166,7 @@
                         <h3 class="text-xl font-bold text-gray-900 mb-2">AI 인프라의 기초: 서버와 컨테이너 환경 구축</h3>
                         <p class="text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100">AI 모델 학습 및 고성능 플랫폼을 돌리기 위한 엔터프라이즈급 서버 환경 구축 방법을 배웁니다.</p>
                         <ul class="space-y-3 text-sm text-gray-700">
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> AI 랩(Lab)실은 어떻게 구성되는가? (GPU 서버, 스위치, 스토리지)</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> AI 랩(Lab)실은 어떻게 구성되는가? (GPU 서버, 스위치, 스토리지 아키텍처)</li>
                             <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> Linux 기초 및 AI 개발 환경 세팅</li>
                             <li class="flex items-start gap-2">
                                 <span class="bg-blue-100 text-blue-700 text-[10px] font-bold px-1.5 py-0.5 rounded mr-1 whitespace-nowrap">실습</span>
@@ -182,8 +194,8 @@
                         <p class="text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100">최신 생성형 AI 트렌드를 살펴보고, 향후 클라우드/인프라와 어떻게 결합하는지 학습합니다.</p>
                         <ul class="space-y-3 text-sm text-gray-700">
                             <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> 생성형 AI(ChatGPT 등)와 LLM(대규모 언어 모델)의 이해</li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> AI가 3D/클라우드 산업에 미치는 영향 (프롬프트 엔지니어링)</li>
-                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> (주)으뜸정보기술 실무진이 들려주는 IT/클라우드 엔지니어의 비전</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> AI가 3D/클라우드 산업에 미치는 영향 (프롬프트 엔지니어링 기초)</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> (주)으뜸정보기술 실무진이 들려주는 IT/클라우드/인프라 엔지니어의 비전과 진로</li>
                             <li class="flex items-start gap-2"><i class="fa-solid fa-check text-nvgreen mt-1"></i> Q&A 및 커리어 멘토링</li>
                         </ul>
                     </div>
@@ -203,7 +215,7 @@
                     <div class="w-10 h-10 rounded-lg bg-nvgreen text-white flex items-center justify-center font-bold text-xl mb-4">1</div>
                     <h3 class="text-lg font-bold mb-3">차별화된 인프라 관점</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        단순한 렌더링 툴 사용법 중심의 타 교육과 달리, 거대한 시스템을 안정적으로 구축하고 운영할 수 있는 <strong>'인프라/클라우드 엔지니어' 양성</strong>에 기여합니다.
+                        단순한 디자인/렌더링 툴 사용법 중심의 타 교육과 달리, 거대한 시스템을 안정적으로 구축하고 운영할 수 있는 <strong>'인프라/클라우드 엔지니어' 양성</strong>에 기여합니다.
                     </p>
                 </div>
                 <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">

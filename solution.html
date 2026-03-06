@@ -27,13 +27,25 @@
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased selection:bg-nvgreen selection:text-white">
 
-    <!-- 홈으로 가기 버튼 (GitHub 배포 시 필수) -->
-    <a href="index.html" class="fixed top-4 left-4 md:top-6 md:left-6 z-50 bg-white/90 backdrop-blur text-gray-700 hover:text-nvgreen font-bold py-2.5 px-5 rounded-full shadow-md border border-gray-200 flex items-center gap-2 transition-all hover:scale-105">
-        <i class="fa-solid fa-arrow-left"></i> <span class="hidden md:inline">메인으로</span>
+    <!-- 홈으로 가기 버튼 (좌측 상단) -->
+    <a href="index.html" class="fixed top-4 left-4 md:top-6 md:left-6 z-50 bg-white/90 backdrop-blur text-gray-700 hover:text-nvdark font-bold py-2.5 px-5 rounded-full shadow-md border border-gray-200 flex items-center gap-2 transition-all hover:scale-105">
+        <i class="fa-solid fa-house"></i> <span class="hidden md:inline">메인으로</span>
     </a>
 
+    <!-- 상단 우측 퀵 네비게이션 (페이지 간 이동) -->
+    <div class="fixed top-4 right-4 md:top-6 md:right-6 z-50 flex gap-2">
+        <!-- 현재 페이지 (Active) -->
+        <a href="solution.html" class="bg-nvgreen text-white font-bold py-2.5 px-4 rounded-full shadow-md border border-nvgreen text-xs md:text-sm flex items-center gap-1.5 transition-all">
+            <i class="fa-solid fa-handshake"></i> <span class="hidden md:inline">PROPOSAL 01</span><span class="md:hidden">P01</span>
+        </a>
+        <!-- 다른 페이지 (Inactive) -->
+        <a href="curriculum.html" class="bg-white/90 backdrop-blur text-gray-500 hover:text-blue-600 border border-gray-200 font-bold py-2.5 px-4 rounded-full shadow-sm text-xs md:text-sm flex items-center gap-1.5 transition-all hover:bg-blue-50 hover:border-blue-200">
+            <i class="fa-solid fa-chalkboard-user"></i> <span class="hidden md:inline">PROPOSAL 02</span><span class="md:hidden">P02</span>
+        </a>
+    </div>
+
     <!-- 반응형 넓은 컨테이너 -->
-    <div id="proposal-content" class="max-w-5xl mx-auto px-4 py-16 md:py-20">
+    <div id="proposal-content" class="max-w-5xl mx-auto px-4 py-16 md:py-20 mt-8 md:mt-0">
         
         <!-- Header Section -->
         <header class="bg-nvdark text-white rounded-3xl p-10 md:p-16 mb-10 shadow-2xl relative overflow-hidden">
@@ -101,7 +113,7 @@
                     </div>
                 </div>
 
-                <!-- Strategy 2: AI Education (수정된 부분) -->
+                <!-- Strategy 2: AI Education -->
                 <div class="strategy-card rounded-2xl shadow-md border border-gray-200 p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start relative overflow-hidden transition hover:shadow-lg">
                     <div class="absolute right-0 top-0 w-2 h-full bg-purple-500"></div>
                     <div class="w-14 h-14 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl flex-shrink-0">
